@@ -7,6 +7,7 @@ spec:
   selector:
     app.kubernetes.io/name: mlflow-server
   ports:
-  - protocol: TCP
+  - nodePort: 30001
+    protocol: TCP
     port: 5000
     targetPort: 5000
