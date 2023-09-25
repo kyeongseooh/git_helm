@@ -4,6 +4,7 @@ metadata:
   namespace: {{ .Release.Namespace | quote }}
   name: mlflow-server-service
 spec:
+  type: NodePort
   selector:
     app.kubernetes.io/name: mlflow-server
   ports:
